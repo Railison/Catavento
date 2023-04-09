@@ -15,7 +15,7 @@ composer require railison/catavento:dev-main
 
 Para atualizar o pacote.
 ```shell
-composer update railison/catavento:dev-main
+composer update railison/catavento
 ```
 
 ## Utilização
