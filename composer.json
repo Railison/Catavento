@@ -16,7 +16,7 @@
   ],
   "autoload":{
     "psr-4":{
-      "Catavento\\": "src/"
+      "Railison\\Catavento\\": "src/"
     }
   },
   "require":{

@@ -1,6 +1,6 @@
 <?php
 
-namespace Catavento;
+namespace Railison\Catavento;
 
 class Catavento
 {
