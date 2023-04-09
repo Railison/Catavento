@@ -82,7 +82,7 @@ class ApiCatavento
 
     public function estoque_desde_x_horas($ambiente)
     {
-        echo 'em breve';
+        echo 'em breve 2.0 sicronizado';
     }
 
     public function buscar_pelo_codigo_de_barras($ambiente)
