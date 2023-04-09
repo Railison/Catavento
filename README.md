@@ -2,11 +2,20 @@
 
 SDK para integração com API da Distribuidora Catavento, buscar produtos, enviar pedidos, e atualização de estoque.
 
+Facilitando integração de sistemas com a distribuidora Catavento.
+
 ## Instalação
 
 Para instalar esta dependência basta executar o comando abaixo:
+
 ```shell
 composer require railison/catavento:dev-main
+```
+## Atualização
+
+Para atualizar o pacote.
+```shell
+composer update railison/catavento:dev-main
 ```
 
 ## Utilização
