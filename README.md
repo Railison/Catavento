@@ -1,12 +1,12 @@
 # Catavento
 
-SDK para integração com API da Distribuidora Catavento.
+SDK para integração com API da Distribuidora Catavento, buscar produtos, enviar pedidos, e atualização de estoque.
 
 ## Instalação
 
 Para instalar esta dependência basta executar o comando abaixo:
 ```shell
-composer require railison/catavento
+composer require railison/catavento:dev-main
 ```
 
 ## Utilização
@@ -17,34 +17,18 @@ Para usar este gerenciador basta seguir o exemplo abaixo:
 require __DIR__.'/vendor/autoload.php';
 
 //DEPENDÊNCIAS
-use WilliamCosta\SecureShell\SSH;
+use Railison\Catavento\ApiCatavento;
 
 //INSTÂNCIA
-$obSSH = new SSH;
+$catavento = new ApiCatavento;
 
-//CONEXÃO
-if(!$obSSH->connect('172.17.0.1',2222)){
-  die('Conexão falhou');
-}
+//PRODUTOS
 
-//AUTENTICAÇÃO VIA USUÁRIO E SENHA
-if(!$obSSH->authPassword('wdev','123456')){
-  die('Autenticação falhou');
-}
+//---- TODOS PRODUTOS
+$catavento->todos_os_produtos('producao|homologacao','tamanho da pagina', 'paginacao', 'token');
+$catavento->todos_os_produtos('producao','1500', '1', 'token');
 
-//AUTENTICAÇÃO VIA PAR DE CHAVES
-if(!$obSSH->authPublicKeyFile('wdev','chave_rsa.pub','chave_rsa.pem')){
-  die('Autenticação falhou');
-}
 
-//EXECUTA COMANDOS
-$stdIo = $obSSH->exec('ls -l',$stdErr);
-echo "STDERR:\n".$stdErr;
-echo "STDIO:\n".$stdIo;
-
-//DESCONECTA
-$obSSH->disconnect();
-```
 
 ## Requisitos
 - Necessário PHP 7.0 ou superior
