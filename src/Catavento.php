@@ -4,7 +4,7 @@ namespace Railison\Catavento;
 
 
 
-class Catavento
+class ApiCatavento
 {
 
     //------- AMBIENTE DA API
