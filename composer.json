@@ -1,0 +1,25 @@
+{
+  "name":"railison/catavento",
+  "description":"SDK API Distribuidora Catavento / Parceria com Hubook",
+  "type":"library",
+  "license":"GPL-3.0-or-later",
+  "authors":[
+    {
+      "name":"Railison",
+      "email": "railison.v@gmail.com"
+    },
+    {
+        "name": "Hubook",
+        "email": "contato@hubook.com.br"
+    }
+  ],
+  "autoload":{
+    "psr-4":{
+      "Catavento\\": "src/"
+    }
+  },
+  "require":{
+    "php": ">=7.0",
+    "guzzlehttp/guzzle": ">=6.3.3"
+  }
+}
