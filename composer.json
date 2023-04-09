@@ -1,8 +1,9 @@
 {
   "name":"railison/catavento",
   "description":"SDK API Distribuidora Catavento / Parceria com Hubook",
+  "keywords"   : ["Catavento", "Distribuidora Catavento", "Dropshipping", "Martkplaces", "Livraria"],
   "type":"library",
-  "license":"GPL-3.0-or-later",
+  "license":"MIT",
   "authors":[
     {
       "name":"Railison",
@@ -20,7 +21,9 @@
   },
   "require":{
     "php": ">=7.0",
-    "guzzlehttp/guzzle": ">=7.5.0"
   },
+  "require-dev": {
+       "guzzlehttp/guzzle": ">=7.5.0"
+    },
   "minimum-stability": "dev"
 }
