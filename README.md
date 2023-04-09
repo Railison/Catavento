@@ -32,4 +32,4 @@ $catavento->todos_os_produtos('producao','1500', '1', 'token');
 
 ## Requisitos
 - Necessário PHP 7.0 ou superior
-- Necessário ter a lib SSH2 instalada e ativa
+- Necessário Guzzle para chamadas.
